@@ -1,6 +1,6 @@
 # Mean Stack RESTful API
 
-#### First step create nodeJS server
+### First step how to create nodeJS server
 
 cd to your folder project
 
@@ -34,5 +34,39 @@ Run the server
 
 Walahhh :)
 
+### Setup static file (html template)
+
+Replace server.js with this code:
+
+	var express = require('express');
+	var app = express();
+
+	* app.use(express.static(__dirname + '/public'));
+
+	app.listen(3000);
+	console.log("Server running on port 3000");
+
+Create folder public
+
+Under public folder create html file named index.html
+
+On index.html write this code for test:
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Contact List App</title>
+	</head>
+	<body>
+	    <h1>Contact List</h1>
+	</body>
+	</html>
+
+Refresh the server and run again
+
+	node server
+
+		
 
 
