@@ -4,11 +4,15 @@
 
 cd to your folder project
 
-$ mkdir contactlistapp
+Creae new directory
 
-cd contactlistapp
+	$ mkdir contactlistapp
 
-Create file named server.js add following code:
+Navigate to contactlistapp folder
+
+	cd contactlistapp
+
+Create JavaScript file named server.js and add following code:
 
 	var express = require('express');	
 	var app = express();
@@ -20,7 +24,7 @@ Create file named server.js add following code:
 	app.listen(3000);
 	console.log("Server running on port 3000");
 
-On the same folder install express
+On the same folder now install express
 
 	$ npm install express
 
@@ -28,6 +32,7 @@ Run the server
 
 	$ node server
 
+Walahhh :)
 
 
 
