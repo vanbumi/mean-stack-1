@@ -67,6 +67,46 @@ Refresh the server and run again
 
 	node server
 
-		
+Next step to setup AngularJS
+
+Add this CDN inside index.html file
+
+	https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js		
+
+Put link CDN before closing tag body as sample bellow:
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Contact List App</title>
+	</head>
+	<body>
+	    <h1>Contact List</h1>
 
 
+	    * <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	</body>
+	</html>
+
+To test AngularJS work correctly add some code as sample bellow:
+
+	<!DOCTYPE html>
+	<html * ng-app>
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Contact List App</title>
+	</head>
+	<body>
+	    <h1>Contact List</h1>
+
+	    * <p>Type what ever you like here:
+	        <input ng-model="test">
+	        {{test}}
+	      </p>
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	</body>
+	</html>
+
+Now refresh the browser... and try it out!	
