@@ -67,7 +67,7 @@ Refresh the server and run again
 
 	node server
 
-Next step to setup AngularJS
+### Setup AngularJS
 
 Add this CDN inside index.html file
 
