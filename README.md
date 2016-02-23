@@ -1,6 +1,8 @@
 # Mean Stack RESTful API
 
-### First step how to create nodeJS server
+### Step by step to create Contact List App
+
+### First step to create NodeJS server
 
 cd to your folder project
 
@@ -181,4 +183,17 @@ Add link on the bottom index.html before closing body tag to connect controller.
 	</body>
 	</html>
 
+### Install MangoJS
 
+	npm install mongojs
+
+### Error recorded 
+
+	module.js:340
+    throw err;
+         ^
+	Error: Cannot find module 'mongodb'
+
+Solution:
+
+	http://stackoverflow.com/questions/14226410/node-js-cannot-find-module-mongodb	
