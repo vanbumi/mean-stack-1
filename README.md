@@ -183,7 +183,7 @@ Add link on the bottom index.html before closing body tag to connect controller.
 	</body>
 	</html>
 
-### Install MangoJS
+### Install MongoJS
 
 	npm install mongojs
 
@@ -196,4 +196,50 @@ Add link on the bottom index.html before closing body tag to connect controller.
 
 Solution:
 
-	http://stackoverflow.com/questions/14226410/node-js-cannot-find-module-mongodb	
+	http://stackoverflow.com/questions/14226410/node-js-cannot-find-module-mongodb
+
+### Connect to MongoDb
+
+Install mangojs
+
+	$ npm install mongojs
+
+Update file server.js, add this lines into it:
+
+	var mongojs = require('mongojs');
+	var db		= mongojs('contactlist', ['contactlist']);
+
+* first line is we require mongojs,
+  second line which mongodb database and collection what we going to be use.
+
+ also add this lines:
+ 
+ 	db.contactlist.find(function (err, docs) {
+		console.log(docs);
+		res.json(docs);
+ 	});  		 
+
+Refresh the server:
+
+	$ node server
+
+Also dan forget to run mongodb on terminal
+
+	$ mongod --dbpath ~/data/db
+
+Refresh your browser localhost:3000
+
+ 	
+Install body-parser
+
+ 	npm install body-parser
+
+Edit file server.js add some lines here:
+
+	var bodyParser = require('body-parser');
+	app.use(bodyParser.json());
+
+
+
+
+
